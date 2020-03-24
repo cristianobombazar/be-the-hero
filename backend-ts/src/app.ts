@@ -21,7 +21,9 @@ class App {
     }
 
     private initializePort() {
-        this.app.listen(3333);
+        this.app.listen(3333, () => {
+            console.log("Server started on port 3333")
+        });
     }
 }
 
