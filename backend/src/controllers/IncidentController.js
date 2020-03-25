@@ -2,8 +2,15 @@ const connection = require('../database/connection');
 
 module.exports = {
     async create(request, response) {
+        
         const { title, description, value  } = request.body;
         const ngo_id = request.headers.authorization;
+
+        console.log( {
+            title,
+            description,
+            value
+        })
 
         const [id] = await connection('incident').insert({
             title,
