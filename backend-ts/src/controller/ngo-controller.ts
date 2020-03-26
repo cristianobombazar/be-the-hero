@@ -4,9 +4,10 @@ import {GetRoutes} from "./interfaces/get-routes";
 import {PostRoutes} from "./interfaces/post-routes";
 import service from '../service/ngo-service';
 import {Ngo} from "../model/ngo.model";
+import {ResponseWrapper} from '../wrapper/response-wrapper';
 
 
-export class NgoController implements Controller, GetRoutes, PostRoutes {
+class NgoController implements Controller, GetRoutes, PostRoutes {
 
     useRouter(router: Router): void {
         this.addGetRoutes(router);
@@ -22,7 +23,11 @@ export class NgoController implements Controller, GetRoutes, PostRoutes {
     addPostRoutes(router: Router): void {
         router.post('/ngo',  async (request: Request, response: Response) => {
             const ngo = request.body as Ngo;
-            return response.json(await service.save(ngo));
+            try{
+                return response.json(await service.save(ngo));
+            }catch(error) {
+                return ResponseWrapper.wrap(error, response);
+            }
         });
     }
 

@@ -2,7 +2,7 @@ import {Controller} from "./interfaces/controller";
 import {Request, Response, Router} from "express";
 
 
-export class RootController implements Controller{
+class RootController implements Controller{
 
     useRouter(router: Router): void {
         this.addGetRoutes(router);
