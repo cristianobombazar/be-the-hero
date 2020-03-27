@@ -5,6 +5,7 @@ import {PostRoutes} from "./interfaces/post-routes";
 import service from '../service/ngo-service';
 import {Ngo} from "../model/ngo.model";
 import {ResponseWrapper} from '../wrapper/response-wrapper';
+import ngoControllerValidation from './validations/ngo-controller-validation';
 
 
 class NgoController implements Controller, GetRoutes, PostRoutes {
@@ -21,12 +22,12 @@ class NgoController implements Controller, GetRoutes, PostRoutes {
     }
 
     addPostRoutes(router: Router): void {
-        router.post('/ngo',  async (request: Request, response: Response) => {
+        router.post('/ngo', ngoControllerValidation.createValidation(), async (request: Request, response: Response) => {
             const ngo = request.body as Ngo;
             try{
                 return response.json(await service.save(ngo));
             }catch(error) {
-                return ResponseWrapper.wrap(error, response);
+                return ResponseWrapper.wrapError(error, response);
             }
         });
     }

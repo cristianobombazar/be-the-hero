@@ -1,5 +1,6 @@
 import express, {Application } from 'express';
 import routes from './routes';
+import { errors } from 'celebrate';
 
 class App {
 
@@ -10,6 +11,7 @@ class App {
         this.addJsonSupport();
         this.addRoutes();
         this.initializePort();
+        this.addValidationHandler();
     }
 
     private addJsonSupport(): void {
@@ -24,6 +26,10 @@ class App {
         this.app.listen(3333, () => {
             console.log("Server started on port 3333")
         });
+    }
+
+    private addValidationHandler() {
+        this.app.use(errors());
     }
 }
 

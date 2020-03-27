@@ -4,17 +4,17 @@ import repository from '../repository/ngo-repository';
 
 class NgoService {
 
-    save(ngo: Ngo): Promise<string> {
+    async save(ngo: Ngo): Promise<string> {
         ngo.login =  crypto.randomBytes(4).toString('HEX');
-        return repository.save(ngo);
+        return await repository.save(ngo);
     }
 
-    findAll(): Promise<any> {
-        return repository.findAll();
+    async findAll(): Promise<any> {
+        return await repository.findAll();
     }
 
-    findByLogin(login: string): Promise<Ngo> {
-        return repository.findByLogin(login);
+    async findByLogin(login: string): Promise<Ngo> {
+        return await repository.findByLogin(login);
     }
 
     async existsByLogin(login: string): Promise<boolean> {

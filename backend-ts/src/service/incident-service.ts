@@ -12,11 +12,11 @@ class IncidentService {
     if (!existsNgo) {
       throw EntityNotFoundError.create('The provided NGO does not exists');
     }
-    return repository.save(incident);
+    return await repository.save(incident);
   }
   
-  findAll(page =1, size = 5): Promise<Array<any>> {
-    return repository.findAll(page, size);
+  async findAll(page =1, size = 5): Promise<Array<any>> {
+    return await repository.findAll(page, size);
   }
 
   async deleteIncident(incidentId: number, ngoLogin: string): Promise<void> {
@@ -24,12 +24,12 @@ class IncidentService {
     if (!existsNgo) {
       throw EntityNotFoundError.create('The provided NGO does not exists');
     }
-    return repository.deleteById(incidentId);    
+    return await repository.deleteById(incidentId);    
   }
 
 
-  findAllByNgo(ngo: Ngo): Promise<Array<Incident>> {
-    return repository.findAllByNgo(ngo.login);
+  async findAllByNgo(ngo: Ngo): Promise<Array<Incident>> {
+    return await repository.findAllByNgo(ngo.login);
   }
 
 }

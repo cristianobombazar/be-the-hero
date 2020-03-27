@@ -11,7 +11,7 @@ class ProfileService {
     if (!ngo) {
       throw EntityNotFoundError.create('The provided NGO does not exists');
     }
-    return incidentService.findAllByNgo(ngo);
+    return await incidentService.findAllByNgo(ngo);
   }
 
 }

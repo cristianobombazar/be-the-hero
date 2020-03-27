@@ -4,6 +4,7 @@ import {GetRoutes} from "./interfaces/get-routes";
 import service from '../service/profile-service';
 import {Incident} from '../model/incident.model';
 import {ResponseWrapper} from '../wrapper/response-wrapper';
+import profileControllerValidation from './validations/profile-controller-validation';
 
 class ProfileController implements Controller, GetRoutes {
 
@@ -12,15 +13,12 @@ class ProfileController implements Controller, GetRoutes {
   }
 
   addGetRoutes(router: Router): void {
-    router.get("/profile", async (request: Request, response: Response): Promise<any> => {
-      const ngo_id = request.headers.authorization;
-      if (!ngo_id) {
-        return ResponseWrapper.wrap('ngo_id must to be provided', response);
-      }
+    router.get("/profile", profileControllerValidation.getProfileValidation(), async (request: Request, response: Response): Promise<any> => {
+      const ngo_id = request.headers.authorization as string;
       try {
         return response.json(await service.findAllByNgo(ngo_id));
       }catch(error) {
-        return ResponseWrapper.wrap(error, response);
+        return ResponseWrapper.wrapError(error, response);
       }
     });
   }
