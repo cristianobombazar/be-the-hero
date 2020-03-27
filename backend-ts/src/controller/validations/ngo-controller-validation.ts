@@ -3,7 +3,7 @@ import { RequestHandler } from 'express';
 
 class NgoControllerValidation  {
 
-  public createValidation(): RequestHandler {
+  save(): RequestHandler {
     return celebrate({
       [Segments.BODY]: Joi.object().keys({
         name: Joi.string().required(),

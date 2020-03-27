@@ -3,7 +3,7 @@ import { RequestHandler } from 'express';
 
 class IncidentControllerValidation {
 
-  public saveValidation(): RequestHandler {
+  save(): RequestHandler {
     return celebrate({
       [Segments.BODY]: Joi.object().keys({
         title: Joi.string().required().min(5).max(50),
@@ -16,7 +16,7 @@ class IncidentControllerValidation {
     });
   }
 
-  public deleteValidation(): RequestHandler {
+  deleteById(): RequestHandler {
     return celebrate({
       [Segments.HEADERS]: Joi.object({
         authorization: Joi.string().required().length(8)
@@ -26,7 +26,6 @@ class IncidentControllerValidation {
       }),
     });
   }
-
 }
 
 export default new IncidentControllerValidation();

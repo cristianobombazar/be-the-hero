@@ -1,4 +1,4 @@
-import {Controller} from "./interfaces/controller";
+import {Controller} from "./interfaces/generic/controller";
 import {Request, Response, Router} from "express";
 
 

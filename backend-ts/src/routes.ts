@@ -1,9 +1,9 @@
 import {Router} from "express";
 import rootController from './controller/root.controller';
-import ngoController from './controller/ngo-controller';
-import incidentController from './controller/incident-controller';
-import sessionController from './controller/session-controller';
-import profileController from './controller/profile-controller';
+import ngoController from './controller/ngo-controller-impl';
+import incidentController from './controller/incident-controller-impl';
+import sessionController from './controller/session-controller-impl';
+import profileController from './controller/profile-controller-impl';
 
 const routes = Router();
 
