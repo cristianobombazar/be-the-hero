@@ -2,11 +2,22 @@
 <img src="./.content/logo3x.png" width="250px" /><br>
  <b>Seja um verdadeiro Heroi!</b> 🦸‍♂️
 </h4>
-<p align="center">
-  <a href="https://rocketseat.com.br">
+<p align="center">	<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cristianobombazar/be-the-hero">	  <a href="https://rocketseat.com.br">
+
     <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-red">
-  </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cristianobombazar/be-the-hero">	
+
+  <a href="https://github.com/cristianobombazar/be-the-hero/commits/master">	
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cristianobombazar/be-the-hero">	
+  </a>	
+
+  <a href="https://github.com/cristianobombazar/be-the-hero/issues">	
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/cristianobombazar/be-the-hero">	
+  </a>	  </a>
+
   <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">	
 </p>
 
 <br>
