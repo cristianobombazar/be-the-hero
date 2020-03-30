@@ -1,6 +1,6 @@
 <h2 align="center">
 
-  <img alt="Be The Hero" src="./.content/logo3x.png.svg" width="200px" />
+  <img alt="Be The Hero" src="https://github.com/cristianobombazar/be-the-hero/blob/master/.content/logo3x.png" width="200px" />
   <br/>
   🚀 Semana Omnistack 11.0
 </h2>
