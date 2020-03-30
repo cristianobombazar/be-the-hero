@@ -1,52 +1,43 @@
 <h4 align="center">
-  🚀 Semana OmniStack 11.0
+<img src="./img/logo3x.png" width="250px" /><br>
+ <b>Seja um verdadeiro Heroi!</b> 🦸‍♂️
 </h4>
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/cristianobombazar/be-the-hero">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/cristianobombazar/be-the-hero">
-  
-  <a href="https://github.com/cristianobombazar/be-the-hero/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cristianobombazar/be-the-hero">
+  <a href="https://rocketseat.com.br">
+    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-red">
   </a>
-
-  <a href="https://github.com/cristianobombazar/be-the-hero/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/cristianobombazar/be-the-hero">
-  </a>
-
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
-</p>
-
-<p align="center">
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-contribuir">Como contribuir</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
 </p>
 
 <br>
 
-## :rocket: Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
+### :rocket: Tecnologias usadas
+Este projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js](https://nodejs.org/en/)
-- [Node.js - Using typescript](https://nodejs.org/en/) 
-- [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
+- [Node.js - Utilizando typescript](https://nodejs.org/en/)
 - [Expo](https://expo.io/)
+- [Express](https://expressjs.com/pt-br/)
+- [React](https://pt-br.reactjs.org/)
 
 
-## 🤔 Como contribuir
+### :muscle: Projeto
 
-- Faça um fork desse repositório;
-- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
-- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
-- Faça push para a sua branch: `git push origin minha-feature`.
+<b>Be the Hero</b> é um projeto que visa ajudar, de maneira <b>financeira</b> uma instituição de caridade, ajudando a mesma se manter. 
 
-Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+### 🦸‍♂️ Qual a importância de ajudar uma ONG? <br>
+As organizações não governamentais <b>(ONGs)</b> são entidades privadas da sociedade civil, sem fins lucrativos, cujo propósito é defender e promover uma causa. Essa causa pode ser virtualmente de qualquer tipo: <b>direitos humanos</b>, <b>direitos animais</b>, <b>direitos indígenas</b>, <b>gênero</b>, <b>luta contra o racismo</b>, <b>meio ambiente</b>, <b>questões urbanas</b>, <b>imigrantes</b>, entre muitos outros.
 
-## :memo: Licença
+### :recycle: Como contribuir
+
+- Fork esse repositório;
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
+
+### :mortar_board: Quem ministrou?
+
+A semana foi ministrada pelo <b>Mestre Jedi</b> [Diego Fernandes](https://github.com/diego3g)
+
+### :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
