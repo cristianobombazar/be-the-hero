@@ -1,10 +1,6 @@
-<h1 align="center">
-    <img alt="Semana OmniStack" src=".github/logo.svg" width="200px" />
-</h1>
-
 <h2 align="center">
 
-  <img alt="Be The Hero" src=".content/logo3x.png.svg" width="200px" />
+  <img alt="Be The Hero" src="./.content/logo3x.png.svg" width="200px" />
   <br/>
   🚀 Semana Omnistack 11.0
 </h2>
